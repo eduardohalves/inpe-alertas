@@ -1,5 +1,5 @@
-import js from "@eslint/js";
-import globals from "globals";
+import js from '@eslint/js';
+import globals from 'globals';
 
 export default [
   js.configs.recommended,
@@ -11,9 +11,9 @@ export default [
       },
     },
     rules: {
-      "no-undef": "error",
-      "semi": ["error", "always"],
-      "quotes": ["error", "single"],
+      'no-undef': 'error',
+      'semi': ['error', 'always'],
+      'quotes': ['error', 'single'],
     },
   },
 ];
