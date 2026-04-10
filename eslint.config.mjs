@@ -1,24 +1,19 @@
 import js from "@eslint/js";
-import reactPlugin from "eslint-plugin-react";
+import globals from "globals";
 
 export default [
-    js.configs.recommended,
-    {
-        files: ["**/*.js", "**/*.jsx"],
-        plugins: {
-            react: reactPlugin,
-        },
-        languageOptions: {
-            sourceType: "module",
-            parserOptions: {
-                ecmaFeatures: {
-                    jsx: true,
-                },
-            },
-        },
-        rules: {
-            "semi": ["error", "always"],
-            "quotes": ["error", "single"],
-        },
+  js.configs.recommended,
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
     },
+    rules: {
+      "no-undef": "error",
+      "semi": ["error", "always"],
+      "quotes": ["error", "single"],
+    },
+  },
 ];
