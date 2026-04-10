@@ -4,7 +4,9 @@
   "description": "Aplicativo com o objetivo de realizar monitoramentos e alertas sobre Eventos Climáticos.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,9 @@
   },
   "homepage": "https://github.com/eduardohalves/inpe-alertas#readme",
   "devDependencies": {
+    "@eslint/js": "^9.0.0",
     "eslint": "^10.2.0",
+    "eslint-plugin-react": "^7.34.0",
     "prettier": "^3.8.2"
   }
 }
