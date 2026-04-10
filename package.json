@@ -1,0 +1,25 @@
+{
+  "name": "inpe-alertas",
+  "version": "1.0.0",
+  "description": "Aplicativo com o objetivo de realizar monitoramentos e alertas sobre Eventos Climáticos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardohalves/inpe-alertas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/eduardohalves/inpe-alertas/issues"
+  },
+  "homepage": "https://github.com/eduardohalves/inpe-alertas#readme",
+  "devDependencies": {
+    "eslint": "^10.2.0",
+    "prettier": "^3.8.2"
+  }
+}
