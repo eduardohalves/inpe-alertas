@@ -4,7 +4,7 @@
   "description": "Aplicativo com o objetivo de realizar monitoramentos e alertas sobre Eventos Climáticos.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
@@ -21,6 +21,7 @@
     "eslint": "^9.7.0",
     "eslint-plugin-react": "^7.34.0",
     "globals": "^15.0.0",
+    "jest": "^30.3.0",
     "prettier": "^3.8.2"
   }
 }
