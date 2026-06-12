@@ -1,4 +1,4 @@
-name: CI com ESLint e Testes
+name: CI com ESLint, Testes e Cobertura
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v4
@@ -26,3 +27,9 @@ jobs:
 
       - name: Rodar Jest
         run: npm test
+
+      - name: Gerar cobertura
+        run: npm run test:coverage
+
+      - name: Enviar cobertura para Codecov
+        uses: codecov/codecov-action@v5

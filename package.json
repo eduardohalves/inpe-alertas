@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
@@ -24,5 +25,8 @@
     "globals": "^15.0.0",
     "jest": "^30.3.0",
     "prettier": "^3.8.2"
+  },
+  "dependencies": {
+    "winston": "^3.19.0"
   }
 }

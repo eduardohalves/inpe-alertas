@@ -5,13 +5,13 @@ import jestPlugin from 'eslint-plugin-jest';
 export default [
   js.configs.recommended,
   {
-    files: ['tests/**/*.test.js'], // Aplica especificamente aos seus testes [cite: 42, 59]
+    files: ['tests/**/*.test.js'], 
     plugins: {
       jest: jestPlugin,
     },
     languageOptions: {
       globals: {
-        ...globals.jest, // Isso define 'test' e 'expect' como válidos [cite: 49, 50]
+        ...globals.jest, 
       },
     },
   },
